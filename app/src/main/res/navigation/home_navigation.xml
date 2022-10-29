@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.valoy.navigation.ui.home.HomeFragment"
+        android:label="@string/title_home">
+        <deepLink app:uri="myapp://home" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/homeDialogFragment"
+        android:name="com.valoy.navigation.ui.home.HomeDialogFragment"
+        android:label="HomeDialogFragment">
+        <deepLink app:uri="myapp://home/dialog" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/dashboardDialogFragment"
+        android:name="com.valoy.dashboard.DashboardDialogFragment"
+        android:label="DashboardDialogFragment">
+        <deepLink app:uri="myapp://home/dashboard/dialog" />
+    </dialog>
+
+</navigation>
