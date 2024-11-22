@@ -21,5 +21,5 @@ Open your terminal and navigate to the Android SDK's platform-tools directory:
 Execute the ADB command to test deep links:
 - ./adb -d shell am start -W -a android.intent.action.VIEW -d "deeplink://feature1" com.example.app  
 
--- Replace "deeplink://feature1" with the actual deep link URL for the specific feature.
--- Replace com.example.app with your app's package name.
+Replace "deeplink://feature1" with the actual deep link URL for the specific feature.
+Replace com.example.app with your app's package name.
